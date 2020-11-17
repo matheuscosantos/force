@@ -2,11 +2,12 @@ version: "3.3"
 
 services:
   force:
-    build: ./force
+    build: app
     container_name: force
     volumes:
       - /home/matheus/:/credentials
-      - /docker/volumes/force/metadata/:/metadata
-      - /docker/volumes/force/lista/:/lista
+      - /home/matheus/Codigos/force/app/metadata/:/metadata
+      - /home/matheus/Codigos/force/app/lista/:/lista
+      - /home/matheus/Codigos/force/app/shapefile/:/shapefile
     environment:
       - BOTO_CONFIG=/credentials/.boto
