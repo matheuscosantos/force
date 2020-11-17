@@ -1,13 +1,10 @@
 # Force
 
-## Instalando
-docker-compose up force
-
 ## Executando 
 docker-compose run force bash
 
 ## Adquirindo Metadados 
-force-level1-csd -u /home/docker/metadata
+force-level1-csd -u /metadata
 
 ## Verificando imagens disponíveis
 
@@ -61,5 +58,5 @@ Informe o intervalo do período desejado:
 
 Comando completo:
 ```
-force-level1-csd -n ./metadata ./metadata/metadata_landsat.csv, ./lista/l-1-datapool.txt 226068 -c 0,10 -d 20140101,20201110
+force-level1-csd -n /metadata /metadata/metadata_landsat.csv, /lista/l-1-datapool.txt 226068 -c 0,10 -d 20140101,20201110
 ```

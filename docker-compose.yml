@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   force:
-    build: app
+    build: ./app
     container_name: force
     volumes:
       - /home/matheus/:/credentials
